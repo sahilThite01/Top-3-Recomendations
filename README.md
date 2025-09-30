@@ -42,9 +42,6 @@ scikit-learn
 
 # Data
 The system requires three CSV files in a datasets folder:
-
 Users.csv
-
 Posts.csv
-
 Engagements.csv
