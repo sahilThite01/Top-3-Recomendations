@@ -19,7 +19,7 @@ Popularity: Posts with a higher total number of engagements are also given a boo
 Interest Overlap: A Jaccard similarity score is calculated between a user's specified interests and the tags on a post to measure direct topical overlap.
 Final Score: All these components—content similarity, collaborative score, interest overlap, recency, and popularity—are combined into a single, final recommendation score using a linear combination with tunable weights (α, β, γ, δ, ε). Posts that a user has already engaged with are optionally deprioritized.
 
-#Evaluation
+# Evaluation
 The system's performance can be evaluated using standard information retrieval metrics.
 Precision@3: The fraction of the top 3 recommended posts that the user actually engaged with.
 nDCG@3 (normalized Discounted Cumulative Gain): A metric that measures the ranking quality, giving higher scores to relevant posts that appear higher in the recommendation list.
