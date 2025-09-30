@@ -35,13 +35,13 @@ Fairness and Diversity: Incorporate mechanisms to prevent filter bubbles and int
 
 # Setup and Usage
 Prerequisites
-Python 3.x
-pandas
-numpy
-scikit-learn
+* Python 3.x
+* pandas
+* numpy
+* scikit-learn
 
 # Data
-* The system requires three CSV files in a datasets folder:
+The system requires three CSV files in a datasets folder:
 * Users.csv
 * Posts.csv
 * Engagements.csv
