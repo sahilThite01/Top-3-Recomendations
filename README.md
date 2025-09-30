@@ -35,7 +35,7 @@ Fairness and Diversity: Incorporate mechanisms to prevent filter bubbles and int
 
 # Setup and Usage
 Prerequisites
-* Python 3.x
+* Python 3.11
 * pandas
 * numpy
 * scikit-learn
