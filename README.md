@@ -5,15 +5,15 @@ This repository contains the code for a post recommendation system that provides
 # Approach
 The recommendation system uses a multi-faceted approach to provide relevant recommendations:
 
-1. Content-Based Filtering
+1. Content-Based Filtering.
 Content Modeling: Post content (titles, body, and tags) is processed using TF-IDF (Term Frequency-Inverse Document Frequency) to convert text into numerical vectors. These vectors are then reduced in dimensionality and denoised using TruncatedSVD to create a dense embedding for each post.
 User Profile Matching: User interests from their profiles are also transformed into a content vector using the same TF-IDF and SVD process. The similarity between a user's interest vector and a post's content embedding is calculated using cosine similarity.
 
-2. Collaborative Filtering
+2. Collaborative Filtering.
 An implicit user-item matrix is built from user engagement data. Different engagement types (e.g., likes, comments) are assigned different weights to reflect their importance.
 SVD (Singular Value Decomposition) is applied to this matrix to discover latent factors for both users and posts. The dot product of a user's latent vector and a post's latent vector is used as the collaborative score.
 
-3. Heuristics & Ensemble Scoring
+3. Heuristics & Ensemble Scoring.
 Recency: Posts created more recently are given a boost using an exponential decay function.
 Popularity: Posts with a higher total number of engagements are also given a boost.
 Interest Overlap: A Jaccard similarity score is calculated between a user's specified interests and the tags on a post to measure direct topical overlap.
@@ -34,7 +34,7 @@ Robust Collaborative Filtering: Implement models like LightFM or Implicit ALS fo
 Fairness and Diversity: Incorporate mechanisms to prevent filter bubbles and introduce serendipity by diversifying recommendations based on content type or topic.
 
 # Setup and Usage
-Prerequisites
+Prerequisites:
 * Python 3.11
 * pandas
 * numpy
